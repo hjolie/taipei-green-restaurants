@@ -1,0 +1,51 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #005433;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 85, 51, 0.3);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #e1fad0;
+    box-shadow: 0 8px 10px rgba(0, 85, 51, 0.5);
+    transform: translateY(-7px);
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #005433;
+}
+
+.phone,
+.address {
+    font-size: 1rem;
+    color: #656363;
+}
