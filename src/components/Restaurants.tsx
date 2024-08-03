@@ -13,7 +13,6 @@ async function fetchRestaurants() {
 
 const Restaurants: React.FC = async () => {
     const data = await fetchRestaurants();
-    console.log(data);
 
     return (
         <div className={styles.container}>
@@ -42,10 +41,6 @@ const Restaurants: React.FC = async () => {
                                 {restaurant.餐廳地址}
                             </p>
                         </a>
-                        // <li key={restaurant._id}>
-                        //     {restaurant._id}
-                        //     {restaurant.餐廳名稱}
-                        // </li>
                     )
                 )}
             </div>
