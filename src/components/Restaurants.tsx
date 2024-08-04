@@ -3,7 +3,7 @@ import styles from "./Restaurants.module.css";
 
 async function fetchRestaurants() {
     const res = await fetch(
-        "https://data.taipei/api/v1/dataset/d706f428-b2c7-4591-9ebf-9f5cd7408f47?scope=resourceAquire&limit=20"
+        "https://data.taipei/api/v1/dataset/d706f428-b2c7-4591-9ebf-9f5cd7408f47?scope=resourceAquire&limit=40"
     );
     if (!res.ok) {
         throw new Error("Failed to fetch data");
@@ -27,8 +27,9 @@ const Restaurants: React.FC = async () => {
                     }) => (
                         <a
                             key={restaurant._id}
-                            href={`https://www.google.com/maps/search/${restaurant.餐廳名稱}`}
-                            target="_blank"
+                            href="/detail"
+                            // href={`https://www.google.com/maps/search/${restaurant.餐廳名稱}`}
+                            // target="_blank"
                             className={styles.card}
                         >
                             <h2 className={styles.name}>

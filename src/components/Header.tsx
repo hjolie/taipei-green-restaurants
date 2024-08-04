@@ -4,13 +4,18 @@ const Header = () => {
     return (
         <header>
             <nav className="navbar">
-                <h1>喵皇「綠」膳房</h1>
+                <h1>
+                    喵皇<span>綠</span>膳房
+                </h1>
                 <ul>
                     <li>
                         <Link href="/">HOME</Link>
                     </li>
                     <li>
-                        <Link href="/search">SEARCH RESTAURANTS</Link>
+                        <Link href="/search">SEARCH</Link>
+                    </li>
+                    <li>
+                        <Link href="/">SIGNIN</Link>
                     </li>
                 </ul>
             </nav>

@@ -34,6 +34,11 @@ header {
 .navbar h1 {
     font-size: 30px;
     font-weight: 900;
+    letter-spacing: 3px;
+}
+.navbar h1 span {
+    font-size: 32px;
+    color: #b1d998;
 }
 .navbar ul {
     display: flex;
